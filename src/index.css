@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display&display=swap');
+
+@layer base {
+  :root {
+    --background: 35 30% 97%;
+    --foreground: 25 20% 12%;
+
+    --card: 35 25% 99%;
+    --card-foreground: 25 20% 12%;
+
+    --popover: 35 25% 99%;
+    --popover-foreground: 25 20% 12%;
+
+    --primary: 100 55% 22%;
+    --primary-foreground: 40 30% 96%;
+
+    --secondary: 100 20% 90%;
+    --secondary-foreground: 100 40% 18%;
+
+    --muted: 35 15% 92%;
+    --muted-foreground: 25 10% 45%;
+
+    --accent: 8 78% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 100 55% 22%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 35 25% 95%;
+    --sidebar-foreground: 25 15% 30%;
+    --sidebar-primary: 100 55% 22%;
+    --sidebar-primary-foreground: 40 30% 96%;
+    --sidebar-accent: 35 20% 90%;
+    --sidebar-accent-foreground: 25 15% 20%;
+    --sidebar-border: 35 15% 85%;
+    --sidebar-ring: 100 55% 22%;
+
+    /* Custom tokens */
+    --warm-overlay: 30 60% 50%;
+    --taste-savory: 25 80% 50%;
+    --taste-sweet: 340 70% 55%;
+    --taste-fresh: 150 60% 45%;
+    --taste-cheesy: 42 90% 55%;
+    --taste-crispy: 30 75% 48%;
+    --taste-comfort: 15 55% 52%;
+    --taste-new: 260 60% 55%;
+
+    --rank-1: 100 55% 22%;
+    --rank-2: 100 45% 30%;
+    --rank-3: 100 35% 38%;
+    --rank-4: 100 25% 46%;
+    --rank-5: 100 20% 54%;
+
+    --shadow-food: 0 8px 32px -8px hsl(25 30% 20% / 0.15);
+    --shadow-card: 0 2px 12px -4px hsl(25 30% 20% / 0.1);
+    --shadow-elevated: 0 12px 40px -12px hsl(25 30% 20% / 0.2);
+
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 35 20% 92%;
+    --card: 25 18% 12%;
+    --card-foreground: 35 20% 92%;
+    --popover: 25 18% 12%;
+    --popover-foreground: 35 20% 92%;
+    --primary: 100 45% 50%;
+    --primary-foreground: 25 20% 8%;
+    --secondary: 100 15% 20%;
+    --secondary-foreground: 100 30% 80%;
+    --muted: 25 10% 18%;
+    --muted-foreground: 35 10% 55%;
+    --accent: 8 70% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 25 10% 22%;
+    --input: 25 10% 22%;
+    --ring: 100 45% 50%;
+    --sidebar-background: 25 15% 10%;
+    --sidebar-foreground: 35 15% 80%;
+    --sidebar-primary: 100 45% 50%;
+    --sidebar-primary-foreground: 25 20% 8%;
+    --sidebar-accent: 25 10% 18%;
+    --sidebar-accent-foreground: 35 15% 80%;
+    --sidebar-border: 25 10% 18%;
+    --sidebar-ring: 100 45% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .shadow-food {
+    box-shadow: var(--shadow-food);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}

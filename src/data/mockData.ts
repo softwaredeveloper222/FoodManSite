@@ -1,0 +1,58 @@
+import { Restaurant } from '@/types/food';
+
+export const restaurants: Restaurant[] = [
+  {
+    id: 'r1',
+    name: 'The Flame & Grill',
+    coverImage: '/images/burger.jpg',
+    categories: ['Burgers & Sandwiches', 'Steak & Grill'],
+    redirectUrl: 'https://example.com/flame-grill',
+    dishes: [
+      { id: 'd1', name: 'Classic Smash Burger', image: '/images/burger.jpg', category: 'Burgers & Sandwiches', primaryTaste: 'Savory', modifiers: [] },
+      { id: 'd2', name: 'Ribeye Steak', image: '/images/steak.jpg', category: 'Steak & Grill', primaryTaste: 'Savory', modifiers: [] },
+      { id: 'd3', name: 'Loaded Mac & Cheese', image: '/images/mac-cheese.jpg', category: 'Comfort Classics', primaryTaste: 'Cheesy', modifiers: [] },
+      { id: 'd4', name: 'Fish Tacos', image: '/images/tacos.jpg', category: 'Mexican & Latin', primaryTaste: 'Crispy', modifiers: ['Spicy'] },
+      { id: 'd5', name: 'Chocolate Lava Cake', image: '/images/chocolate-cake.jpg', category: 'Desserts & Sweets', primaryTaste: 'Sweet', modifiers: [] },
+      { id: 'd6', name: 'Grilled Salmon', image: '/images/salmon.jpg', category: 'Seafood', primaryTaste: 'Fresh', modifiers: [] },
+      { id: 'd7', name: 'Pad Thai', image: '/images/pad-thai.jpg', category: 'Asian', primaryTaste: 'Savory', modifiers: ['Spicy'] },
+      { id: 'd8', name: 'Margherita Pizza', image: '/images/pizza.jpg', category: 'Pizza & Italian', primaryTaste: 'Cheesy', modifiers: ['Vegetarian'] },
+      { id: 'd9', name: 'Poke Bowl', image: '/images/poke-bowl.jpg', category: 'Salads & Bowls', primaryTaste: 'Fresh', modifiers: [] },
+    ],
+  },
+  {
+    id: 'r2',
+    name: 'Sakura Kitchen',
+    coverImage: '/images/pad-thai.jpg',
+    categories: ['Asian', 'Salads & Bowls'],
+    redirectUrl: 'https://example.com/sakura',
+    dishes: [
+      { id: 'd10', name: 'Spicy Pad Thai', image: '/images/pad-thai.jpg', category: 'Asian', primaryTaste: 'Savory', modifiers: ['Spicy'] },
+      { id: 'd11', name: 'Salmon Poke Bowl', image: '/images/poke-bowl.jpg', category: 'Salads & Bowls', primaryTaste: 'Fresh', modifiers: [] },
+      { id: 'd12', name: 'Grilled Teriyaki Salmon', image: '/images/salmon.jpg', category: 'Seafood', primaryTaste: 'Savory', modifiers: [] },
+      { id: 'd13', name: 'Mochi Ice Cream', image: '/images/chocolate-cake.jpg', category: 'Desserts & Sweets', primaryTaste: 'Sweet', modifiers: [] },
+      { id: 'd14', name: 'Veggie Tempura', image: '/images/tacos.jpg', category: 'Asian', primaryTaste: 'Crispy', modifiers: ['Vegetarian'] },
+      { id: 'd15', name: 'Truffle Mac Bowl', image: '/images/mac-cheese.jpg', category: 'Comfort Classics', primaryTaste: 'Comfort', modifiers: [] },
+      { id: 'd16', name: 'Wagyu Burger', image: '/images/burger.jpg', category: 'Burgers & Sandwiches', primaryTaste: 'Savory', modifiers: [] },
+      { id: 'd17', name: 'Neapolitan Pizza', image: '/images/pizza.jpg', category: 'Pizza & Italian', primaryTaste: 'Cheesy', modifiers: [] },
+      { id: 'd18', name: 'Herb-Crusted Steak', image: '/images/steak.jpg', category: 'Steak & Grill', primaryTaste: 'Savory', modifiers: [] },
+    ],
+  },
+  {
+    id: 'r3',
+    name: 'Dolce Vita',
+    coverImage: '/images/pizza.jpg',
+    categories: ['Pizza & Italian', 'Desserts & Sweets'],
+    redirectUrl: 'https://example.com/dolce-vita',
+    dishes: [
+      { id: 'd19', name: 'Wood-Fired Margherita', image: '/images/pizza.jpg', category: 'Pizza & Italian', primaryTaste: 'Cheesy', modifiers: ['Vegetarian'] },
+      { id: 'd20', name: 'Tiramisu', image: '/images/chocolate-cake.jpg', category: 'Desserts & Sweets', primaryTaste: 'Sweet', modifiers: [] },
+      { id: 'd21', name: 'Seafood Linguine', image: '/images/salmon.jpg', category: 'Seafood', primaryTaste: 'Fresh', modifiers: [] },
+      { id: 'd22', name: 'Burrata Salad', image: '/images/poke-bowl.jpg', category: 'Salads & Bowls', primaryTaste: 'Fresh', modifiers: ['Vegetarian'] },
+      { id: 'd23', name: 'Truffle Fries', image: '/images/mac-cheese.jpg', category: 'Comfort Classics', primaryTaste: 'Crispy', modifiers: [] },
+      { id: 'd24', name: 'Italian Burger', image: '/images/burger.jpg', category: 'Burgers & Sandwiches', primaryTaste: 'Savory', modifiers: [] },
+      { id: 'd25', name: 'Spicy Arrabbiata', image: '/images/pad-thai.jpg', category: 'Pizza & Italian', primaryTaste: 'Savory', modifiers: ['Spicy', 'Vegan'] },
+      { id: 'd26', name: 'Grilled Branzino', image: '/images/steak.jpg', category: 'Seafood', primaryTaste: 'Fresh', modifiers: [] },
+      { id: 'd27', name: 'Street Tacos', image: '/images/tacos.jpg', category: 'Mexican & Latin', primaryTaste: 'Savory', modifiers: ['Spicy'] },
+    ],
+  },
+];
